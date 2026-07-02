@@ -1,0 +1,23 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild -list -workspace ./RemoteControl.xcworkspace
+
+Information about workspace "RemoteControl":
+    Schemes:
+        Ads-CN
+        AnyThinkiOS
+        AnyThinkMediationAdxSmartdigimktCNAdapter
+        AnyThinkMediationBaiduAdapter
+        AnyThinkMediationGDTAdapter
+        AnyThinkMediationGromoreAdapter
+        AnyThinkMediationTTAdapter_Mix
+        BaiduMobAdSDK
+        BUTTSDKFramework
+        CoreSubscriptionKit
+        GDTMobSDK
+        Pods-RemoteControl
+        RemoteControl
+        RemoteControlTEST
+        SmartdigimktCNSDK
+        UMCommon
+        UMDevice
+
