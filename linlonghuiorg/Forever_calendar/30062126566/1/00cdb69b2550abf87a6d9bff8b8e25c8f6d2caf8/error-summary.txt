@@ -1,0 +1,1 @@
+签名配置错误：Provisioning profile "appstore-com.ryjv.nsmw.qxlt-20260724023823887" doesn't include the App Groups capability. (in target 'ForeverCalendar' from project 'ForeverCalendar') Provisioning profile "appstore-com.ryjv.nsmw.qxlt-20260724023823887" doesn't support the group.com.linlonghui.share App Group. (in target 'ForeverCalendar' from project 'ForeverCalendar') 

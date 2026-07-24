@@ -1,0 +1,62 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace /Users/runner/work/Forever_calendar/Forever_calendar/ForeverCalendar.xcworkspace -scheme ForeverCalendar -configuration Release -destination generic/platform=iOS -skipMacroValidation -skipPackagePluginValidation -archivePath /Users/runner/work/Forever_calendar/Forever_calendar/build.xcarchive
+
+2026-07-24 02:38:58.691 xcodebuild[7589:25758] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'ForeverCalendar' in project 'ForeverCalendar'
+        ➜ Implicit dependency on target 'Pods-ForeverCalendar' in project 'Pods' via file 'Pods_ForeverCalendar.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'CoreSubscriptionKit' in project 'Pods' via options '-framework CoreSubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-ForeverCalendar' in project 'Pods'
+        ➜ Explicit dependency on target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Forever_calendar/Forever_calendar/Sources/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 339cd114e499443b519141b7f1c543b0
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/ForeverCalendar-bgwelccvhowukjegvqsnjnftylpy/Build/Intermediates.noindex/ArchiveIntermediates/ForeverCalendar/IntermediateBuildFilesPath/XCBuildData/339cd114e499443b519141b7f1c543b0.xcbuilddata
+/Users/runner/work/Forever_calendar/Forever_calendar/ForeverCalendar.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsmw.qxlt-20260724023823887" doesn't include the App Groups capability. (in target 'ForeverCalendar' from project 'ForeverCalendar')
+/Users/runner/work/Forever_calendar/Forever_calendar/ForeverCalendar.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsmw.qxlt-20260724023823887" doesn't support the group.com.linlonghui.share App Group. (in target 'ForeverCalendar' from project 'ForeverCalendar')
+/Users/runner/work/Forever_calendar/Forever_calendar/ForeverCalendar.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsmw.qxlt-20260724023823887" doesn't include the com.apple.security.application-groups entitlement. (in target 'ForeverCalendar' from project 'ForeverCalendar')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace ForeverCalendar with scheme ForeverCalendar
+(1 failure)
